@@ -4,9 +4,9 @@ const Services = () => {
   return (
     <>
       {/* Aesthetic Divider */}
-      <section className="py-12 bg-surface-container-lowest border-y border-outline-variant/20 transition-all duration-1000 opacity-100 translate-y-0">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop overflow-x-auto no-scrollbar">
-          <div className="flex justify-between items-center gap-6 md:gap-12 min-w-max">
+      <section className="py-12 bg-surface-container-lowest border-y border-outline-variant/20 transition-all duration-1000 opacity-100 translate-y-0 overflow-hidden">
+        <div className="animate-marquee hover:[animation-play-state:paused]">
+          <div className="flex justify-around items-center gap-6 md:gap-12 px-3 md:px-6">
             <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Precision</span>
             <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
             <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Craftsmanship</span>
@@ -14,6 +14,18 @@ const Services = () => {
             <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Exclusivity</span>
             <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
             <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Artistry</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
+          </div>
+          {/* Duplicate for seamless infinite loop */}
+          <div className="flex justify-around items-center gap-6 md:gap-12 px-3 md:px-6" aria-hidden="true">
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Precision</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Craftsmanship</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Exclusivity</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Artistry</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
           </div>
         </div>
       </section>
