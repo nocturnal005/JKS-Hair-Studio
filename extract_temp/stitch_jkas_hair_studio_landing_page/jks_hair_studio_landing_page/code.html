@@ -1,0 +1,462 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>JKS Hair Studio | The Gold Standard of Haircraft</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#2f3131",
+                    "primary-fixed": "#ffe088",
+                    "tertiary-fixed": "#e4e2e1",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-tertiary-container": "#454545",
+                    "on-primary": "#3c2f00",
+                    "secondary": "#c8c6c5",
+                    "on-background": "#e3e2e2",
+                    "on-primary-container": "#554300",
+                    "on-tertiary": "#303030",
+                    "surface-container-low": "#1a1c1c",
+                    "secondary-container": "#474746",
+                    "tertiary-container": "#b4b2b2",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-error": "#690005",
+                    "on-surface-variant": "#d0c5af",
+                    "surface-container": "#1e2020",
+                    "outline-variant": "#4d4635",
+                    "inverse-primary": "#735c00",
+                    "secondary-fixed": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "on-secondary-container": "#b7b5b4",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "tertiary": "#d0cdcd",
+                    "surface-container-lowest": "#0d0e0f",
+                    "on-surface": "#e3e2e2",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "surface-dim": "#121414",
+                    "primary": "#f2ca50",
+                    "surface-container-highest": "#343535",
+                    "surface-variant": "#343535",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-container-high": "#292a2a",
+                    "on-secondary": "#313030",
+                    "surface-tint": "#e9c349",
+                    "primary-container": "#d4af37",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-fixed": "#241a00",
+                    "outline": "#99907c",
+                    "surface": "#121414",
+                    "inverse-surface": "#e3e2e2",
+                    "surface-bright": "#383939",
+                    "on-primary-fixed-variant": "#574500",
+                    "background": "#121414"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Manrope"],
+                    "headline-md": ["Playfair Display"],
+                    "label-caps": ["Manrope"],
+                    "display-lg": ["Playfair Display"],
+                    "body-md": ["Manrope"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "500"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-underline {
+            position: relative;
+        }
+        .gold-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 40px;
+            height: 1px;
+            background-color: #f2ca50;
+        }
+        .menu-dot-line {
+            flex-grow: 1;
+            border-bottom: 1px dotted #4d4635;
+            margin: 0 12px;
+            transform: translateY(-6px);
+        }
+        .obsidian-card {
+            background-color: #121414;
+            border: 1px solid #333333;
+            transition: border-color 0.3s ease;
+        }
+        .obsidian-card:hover {
+            border-color: #f2ca50;
+        }
+        .gold-glint {
+            border-top: 1px solid rgba(242, 202, 80, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary tracking-tight">
+                JKS Hair Studio
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#gallery">Gallery</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+<a class="bg-primary text-on-primary px-6 py-2.5 font-label-caps text-label-caps uppercase tracking-widest active:scale-95 duration-200" href="#booking">Book Now</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden transition-all duration-1000 opacity-100 translate-y-0">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40 grayscale" data-alt="A dark, moody cinematic close-up of a professional barber's tools resting on a black leather surface. Warm, dramatic lighting highlights the metallic sheen of scissors and razors. The atmosphere is upscale, masculine, and sophisticated, with deep shadows and soft golden reflections that evoke a luxury boutique feeling." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeyl4HDuohxXiNbwljzJ8DN1OxDSauFeFXd5EI-ud1yg9ZE5BTJEPE_UYmFmOEqEsc2I43yDPNTXgDh8mOjZmR_WBE5WKrUj8P2AVg8bdRa0HiXfcWFHRNj18kmm8yvs85uJs9rJLu5dhU90N8KX4OmlKOX5KHkNy18Tp9Ak5CcBHB7G1phiQb5KUQJNiwcnczeR1adlEr-YS5rDyO1q1dB7YH8KGNojAYfUwOt8nXQcXprnjLE4GOhA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 gap-12 items-center">
+<div class="space-y-8 text-center">
+<div class="inline-block border border-primary/40 px-4 py-1 text-primary font-label-caps text-label-caps uppercase">
+                        London's Premier Grooming Destination
+                    </div>
+<h1 class="font-display-lg text-display-lg text-on-background leading-none">
+                        The <span class="text-primary italic font-medium">Gold</span> Standard: <br>
+                        Haircraft At Its Finest
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto">
+                        Experience precision engineering for the modern gentleman. We combine traditional craftsmanship with contemporary aesthetics to define your signature look.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4 justify-center">
+<a class="bg-primary text-on-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-[0.2em] hover:bg-primary-fixed-dim transition-all gold-glint" href="#booking">
+                            Book Appointment
+                        </a>
+<a class="border border-primary text-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-[0.2em] hover:bg-primary/10 transition-all" href="#services">
+                            View Menu
+                        </a>
+</div>
+</div>
+
+</div>
+</section>
+<!-- Aesthetic Divider -->
+<section class="py-12 bg-surface-container-lowest border-y border-outline-variant/20 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center gap-12 overflow-hidden whitespace-nowrap">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.5em] opacity-50">Precision</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.5em] opacity-50">•</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.5em] opacity-50">Craftsmanship</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.5em] opacity-50">•</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.5em] opacity-50">Exclusivity</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.5em] opacity-50">•</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-[0.5em] opacity-50">Artistry</span>
+</div>
+</section>
+<!-- Services & Pricing -->
+<section class="py-32 bg-background transition-all duration-1000 opacity-100 translate-y-0" id="services">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<span class="text-primary font-label-caps text-label-caps uppercase gold-underline">The Menu</span>
+<h2 class="font-headline-lg text-headline-lg mt-4">Curated Haircare Services</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                        Each session is a bespoke experience tailored to your unique hair profile and lifestyle requirements.
+                    </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-24 gap-y-12">
+<!-- Service Group 1 -->
+<div class="space-y-10">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Luxury Cut &amp; Style</h3>
+<div class="menu-dot-line"></div>
+<span class="font-headline-md text-headline-md text-primary">£45</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Signature consultation, precision cut, scalp massage, and bespoke styling with premium products.</p>
+</div>
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">The Precision Fade</h3>
+<div class="menu-dot-line"></div>
+<span class="font-headline-md text-headline-md text-primary">£35</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Sharp, seamless transitions executed with master craftsmanship. Includes edge-up and finish.</p>
+</div>
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Gold Standard Shave</h3>
+<div class="menu-dot-line"></div>
+<span class="font-headline-md text-headline-md text-primary">£30</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Traditional hot towel treatment, pre-shave oil, and razor-sharp finish for ultimate smoothness.</p>
+</div>
+</div>
+<!-- Service Group 2 -->
+<div class="space-y-10">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Beard Sculpt &amp; Groom</h3>
+<div class="menu-dot-line"></div>
+<span class="font-headline-md text-headline-md text-primary">£25</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Bespoke shaping, length adjustment, and beard oil treatment for a refined look.</p>
+</div>
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">The Full Transformation</h3>
+<div class="menu-dot-line"></div>
+<span class="font-headline-md text-headline-md text-primary">£65</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">The ultimate combination: Luxury Cut, Style, and Beard Grooming with facial refresh.</p>
+</div>
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Kids Junior Cut</h3>
+<div class="menu-dot-line"></div>
+<span class="font-headline-md text-headline-md text-primary">£20</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Gentle but stylish cuts for the next generation of gentlemen. Under 12s only.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Bento Grid -->
+<section class="py-32 bg-surface-container-lowest transition-all duration-1000 opacity-100 translate-y-0" id="gallery">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-20">
+<span class="text-primary font-label-caps text-label-caps uppercase">Our Craft</span>
+<h2 class="font-headline-lg text-headline-lg mt-4">The Gallery of Excellence</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-[800px]">
+<div class="md:col-span-2 md:row-span-2 obsidian-card overflow-hidden">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700" data-alt="A high-contrast black and white editorial photograph of a male model with a perfectly executed sharp fade haircut. The lighting is dramatic and directional, highlighting the texture of the hair and the crispness of the hairline. The style is modern, masculine, and sophisticated." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCx1seokM5VOTKqR0HA-tKVqRsVBFIsbApjcABCoJ0UV3Aj70Y_-8A0iZlmBimnSt185xWS-jxJq6QAvbBgx3X4nxVzz8ZEPOzxfsBoYMXPcyiV9KS7jhvQXhzgKaJfQH_zIY8LsvuZ_UqOa2RkbhIoLGd-dHT7VXuLUFdfNqwP_YnkgGBaGrihSbFBr71Ol8eUJ1QuqpdCXVHDpMgSszzSKLlnDuLoQ7pG_7SlG66XtTPtaSba-ROV3w')"></div>
+</div>
+<div class="md:col-span-2 md:row-span-1 obsidian-card overflow-hidden">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700" data-alt="A close-up photograph focusing on the fine detail of a master barber's hands using a straight razor on a client's beard. The skin is prepared with rich white lather. The lighting is warm and golden, emphasizing the focus and precision of the craft within a luxury hair studio setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBz3nx1hc0ZpROo8uOyRE1oUDi1unU4swXQ1R0Wwn46j3CR9pRGjKXHZs_8n1dGztHef-SGxoTJEB36qKlyAe2kVc2jd3O9fj3h9elbBrGcetzRRpwYJxNtC0YMhBrq8T9ipcQ3J5phgc3UzK9W2aErURECLvUZGCyaYfy01Y03TJAGJjdwSPPb9aooMZ8wLfy3tXa1J8ge7pEBrc9bvaYk3wfy1DUywFVsEMsWdnkiAK1yyKV2rHvh2w')"></div>
+</div>
+<div class="md:col-span-1 md:row-span-1 obsidian-card overflow-hidden">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700" data-alt="An artistic shot of professional grooming products—dark glass bottles and gold-handled combs—arranged elegantly on a marble surface. Soft bokeh in the background reveals the interior of a premium hair studio with warm, ambient lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBg31AearWxgfw7o8Yq90gfejnVgxGyuqi68ODl0wBxYmNBhlGzZYhqz0vSSERFO08Ray_qiIC0p-gNv4GQeWLoWNjetMavvxuhp3HSg6aIcSlLIIPpfMH08xKSNQ8QpLFhY2BNmFur9kN29l_LimJyRYmrHFn7BTi-mBhh7jrQZqp6a2L7tL0MpWHDmYZ_Jwytp-3sE7sKswdMmXC002nr-iG0i_mkSWl_z5DNT4HCD2KkOx7yGT9hTQ')"></div>
+</div>
+<div class="md:col-span-1 md:row-span-1 obsidian-card overflow-hidden">
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700" data-alt="A side profile view of a client with a textured quiff hairstyle, showcasing the meticulous layering and styling. The lighting is high-end and clean, highlighting individual hair strands and a subtle healthy sheen." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTnxvUNhsutM5BU4C1fGnqQa8QMM4tuD9Tn2ZKmDqEuSEYlyo8H93gS1lC2mfSpJjjzPHbDftBE7dTVw1QstNno3IE6yQiNjm1xXRkSaB0YX1iFfhbS5GnDPSihWpexeDydexse1OuqHa-TbD44ORac9tx-CQDHvDUrPvjmvmzWKmyqyxPkg7wduXcjYRdu-4sazmqEyI-mQ6agZ3pPeIunJQBp-E_Fiac_IBuXVBxaiWfkx2yPi4TmQ')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-32 bg-background transition-all duration-1000 opacity-100 translate-y-0" id="booking">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-8 leading-tight">Secure Your<br><span class="text-primary italic">Signature Experience</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center text-primary border border-outline-variant/30">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="font-body-md font-bold text-on-surface">Flexible Hours</h4>
+<p class="text-on-surface-variant">Mon - Sat: 9am - 8pm<br>Sun: By Appointment</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center text-primary border border-outline-variant/30">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-body-md font-bold text-on-surface">Private Studio</h4>
+<p class="text-on-surface-variant">Premium location in the heart of London.<br>Detailed address provided on booking.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center text-primary border border-outline-variant/30">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<div>
+<h4 class="font-body-md font-bold text-on-surface">Seamless Payment</h4>
+<p class="text-on-surface-variant">We accept all major cards and digital wallets.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="obsidian-card p-10 gold-glint">
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="font-label-caps text-[10px] text-outline uppercase block mb-2">Full Name</label>
+<input class="w-full bg-surface border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface placeholder:text-outline/50 transition-colors py-3 px-0" type="text">
+</div>
+<div>
+<label class="font-label-caps text-[10px] text-outline uppercase block mb-2">Phone Number</label>
+<input class="w-full bg-surface border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface placeholder:text-outline/50 transition-colors py-3 px-0" type="tel">
+</div>
+</div>
+<div>
+<label class="font-label-caps text-[10px] text-outline uppercase block mb-2">Service Required</label>
+<select class="w-full bg-surface border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface transition-colors py-3 px-0">
+<option>Select a service...</option>
+<option>Luxury Cut &amp; Style</option>
+<option>The Precision Fade</option>
+<option>Gold Standard Shave</option>
+<option>Beard Sculpt &amp; Groom</option>
+<option>The Full Transformation</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="font-label-caps text-[10px] text-outline uppercase block mb-2">Preferred Date</label>
+<input class="w-full bg-surface border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface transition-colors py-3 px-0" type="date">
+</div>
+<div>
+<label class="font-label-caps text-[10px] text-outline uppercase block mb-2">Preferred Time</label>
+<input class="w-full bg-surface border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface transition-colors py-3 px-0" type="time">
+</div>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-caps text-label-caps uppercase py-5 tracking-[0.2em] hover:bg-primary-fixed-dim transition-all gold-glint mt-4" type="submit">
+                                Confirm Appointment Request
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof -->
+<section class="py-32 bg-surface-container-lowest transition-all duration-1000 opacity-100 translate-y-0" id="contact">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-lg text-headline-lg mb-16">Connect With The Studio</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<a class="obsidian-card p-12 flex flex-col items-center group" href="https://instagram.com/j_kay_sl" target="_blank">
+<div class="w-20 h-20 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#f2ca50] to-[#e9c349] mb-6 shadow-xl">
+<img alt="Instagram" class="w-10 h-10 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCClNFLFizWnKhf2SRp93WiHToMpMPrlp5-KIGkIq18r5E-VVec__quWW3aO6PNQB7iqpet3ZFeJIxq2_kB3J3kNf4OSkcHpdgokUmjnHr9Eon7dz1HajZVNkm8ECIgIrRcgIfEcxpxAZ6XZoOTN9y_gnOwGjU-j89ElQDuxnMEAQ62hGc__1Gw2jdLqfUT1b5GNaiesSw5lyBYrm-Thd1Rw68TvH6JOefOIthWGmHLTE9jRwgl3ikS3g">
+</div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest mb-2">Instagram</span>
+<span class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">@j_kay_sl</span>
+</a>
+<a class="obsidian-card p-12 flex flex-col items-center group" href="https://wa.me/447312200225" target="_blank">
+<div class="w-20 h-20 rounded-full flex items-center justify-center bg-gradient-to-tr from-[#25D366] to-[#128C7E] mb-6 shadow-xl">
+<img alt="WhatsApp" class="w-10 h-10 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1zbiFU-066DStmEw5JILNCNqgZCNTOQHhabXXuu8I75gXNlzVeTOokeXvgohyp6NPZVwq7qsxLyYMqyP3zIGalB5EAWR1MQWSIVf_Ew2vw31TMYoFnSiHKIH0lXCUNUzegYFXraJ1eTWdIUp80tqhKJcGdgNrP-RzTjA85GpTYs8IdWxwD7Oj_fTo07hSExMuGmBFtzjW9pGao70K0V_MCaaUHZQD8ZxQWkQMGJOVEunQ6mO0PkLPDQ">
+</div>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-widest mb-2">WhatsApp / Direct Line</span>
+<span class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">+44(0)7312200225</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-20 pb-12">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-20">
+<div class="space-y-6">
+<div class="font-headline-lg text-headline-lg text-primary tracking-tighter">
+                        JKS
+                    </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                        The definitive destination for premium hair craftsmanship in London. Precision, prestige, and unparalleled service.
+                    </p>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-on-surface uppercase mb-6">Navigation</h5>
+<ul class="space-y-3">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#gallery">Gallery</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#booking">Book Online</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-label-caps text-label-caps text-on-surface uppercase mb-6">Legal &amp; Connect</h5>
+<ul class="space-y-3">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Studio Policies</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-outline-variant/10">
+<p class="font-body-md text-body-md text-outline mb-4 md:mb-0">
+                    © 2024 JKS Hair Studio. All rights reserved.
+                </p>
+<div class="flex gap-8">
+<span class="font-label-caps text-[10px] text-outline uppercase">Handcrafted by London's Finest</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Reveal On Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+
+
+</body></html>

@@ -5,7 +5,7 @@ const Services = () => {
     <>
       {/* Aesthetic Divider */}
       <section className="py-12 bg-surface-container-lowest border-y border-outline-variant/20 transition-all duration-1000 opacity-100 translate-y-0">
-        <div className="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center gap-12 overflow-hidden whitespace-nowrap">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center gap-12 overflow-hidden whitespace-nowrap">
           <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">Precision</span>
           <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">•</span>
           <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">Craftsmanship</span>
@@ -18,11 +18,11 @@ const Services = () => {
 
       {/* Services & Pricing */}
       <section className="py-32 bg-background transition-all duration-1000 opacity-100 translate-y-0" id="services">
-        <div className="max-w-container-max mx-auto px-margin-desktop">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
             <div className="max-w-xl">
               <span className="text-primary font-label-caps text-label-caps uppercase gold-underline">The Menu</span>
-              <h2 className="font-headline-lg text-headline-lg mt-4">Curated Haircare Services</h2>
+              <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg mt-4">Curated Haircare Services</h2>
             </div>
             <p className="font-body-md text-body-md text-on-surface-variant max-w-sm">
               Each session is a bespoke experience tailored to your unique hair profile and lifestyle requirements.

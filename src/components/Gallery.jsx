@@ -3,10 +3,10 @@ import React from 'react';
 const Gallery = () => {
   return (
     <section className="py-32 bg-surface-container-lowest transition-all duration-1000 opacity-100 translate-y-0" id="gallery">
-      <div className="max-w-container-max mx-auto px-margin-desktop">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="text-center mb-20">
           <span className="text-primary font-label-caps text-label-caps uppercase">Gallery</span>
-          <h2 className="font-headline-lg text-headline-lg mt-4">Hall of Haircraft</h2>
+          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg mt-4">Hall of Haircraft</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-[800px]">
           <div className="md:col-span-2 md:row-span-2 obsidian-card overflow-hidden">

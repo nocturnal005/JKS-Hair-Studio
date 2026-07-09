@@ -11,23 +11,23 @@ const Hero = () => {
         ></div>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
       </div>
-      <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 gap-12 items-center">
+      <div className="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 gap-12 items-center">
         <div className="space-y-8 text-center">
           <div className="inline-block border border-primary/40 px-4 py-1 text-primary font-label-caps text-label-caps uppercase">
             London's Premier Grooming Destination
           </div>
-          <h1 className="font-display-lg text-display-lg text-on-background leading-none">
+          <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-background leading-none">
             The <span className="text-primary italic font-medium">Gold</span> Standard: <br />
             Haircraft At Its Finest
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto">
             Experience precision engineering for the modern gentleman. We combine traditional craftsmanship with contemporary aesthetics to define your signature look.
           </p>
-          <div className="flex flex-wrap gap-4 pt-4 justify-center">
-            <a className="bg-primary text-on-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-[0.2em] hover:bg-primary-fixed-dim transition-all gold-glint" href="#booking">
+          <div className="flex flex-col md:flex-row gap-4 pt-4 justify-center w-full max-w-md mx-auto md:max-w-none">
+            <a className="w-full md:w-auto text-center bg-primary text-on-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-[0.2em] hover:bg-primary-fixed-dim transition-all gold-glint" href="#booking">
               Book Appointment
             </a>
-            <a className="border border-primary text-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-[0.2em] hover:bg-primary/10 transition-all" href="#services">
+            <a className="w-full md:w-auto text-center border border-primary text-primary px-10 py-4 font-label-caps text-label-caps uppercase tracking-[0.2em] hover:bg-primary/10 transition-all" href="#services">
               View Menu
             </a>
           </div>

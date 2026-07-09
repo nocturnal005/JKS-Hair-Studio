@@ -3,10 +3,10 @@ import React from 'react';
 const Booking = () => {
   return (
     <section className="py-32 bg-background transition-all duration-1000 opacity-100 translate-y-0" id="booking">
-      <div className="max-w-container-max mx-auto px-margin-desktop">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>
-            <h2 className="font-headline-lg text-headline-lg mb-8 leading-tight">
+            <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-8 leading-tight">
               Secure Your<br /><span className="text-primary italic">Signature Experience</span>
             </h2>
             <div className="space-y-8">
@@ -39,9 +39,9 @@ const Booking = () => {
               </div>
             </div>
           </div>
-          <div className="obsidian-card p-10 gold-glint">
+          <div className="obsidian-card p-6 md:p-10 gold-glint">
             <form className="space-y-6">
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="font-label-caps text-[10px] text-outline uppercase block mb-2">Full Name</label>
                   <input className="w-full bg-surface border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface placeholder:text-outline/50 transition-colors py-3 px-0" type="text" />
@@ -63,7 +63,7 @@ const Booking = () => {
                   <option>The Full Transformation</option>
                 </select>
               </div>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="font-label-caps text-[10px] text-outline uppercase block mb-2">Preferred Date</label>
                   <input className="w-full bg-surface border-0 border-b border-outline-variant focus:border-primary focus:ring-0 text-on-surface transition-colors py-3 px-0" type="date" />
