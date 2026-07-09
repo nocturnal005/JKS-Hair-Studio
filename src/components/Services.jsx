@@ -5,14 +5,16 @@ const Services = () => {
     <>
       {/* Aesthetic Divider */}
       <section className="py-12 bg-surface-container-lowest border-y border-outline-variant/20 transition-all duration-1000 opacity-100 translate-y-0">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center gap-12 overflow-hidden whitespace-nowrap">
-          <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">Precision</span>
-          <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">•</span>
-          <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">Craftsmanship</span>
-          <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">•</span>
-          <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">Exclusivity</span>
-          <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">•</span>
-          <span className="font-label-caps text-lg md:text-xl font-medium text-primary/70 uppercase tracking-[0.5em]">Artistry</span>
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop overflow-x-auto no-scrollbar">
+          <div className="flex justify-between items-center gap-6 md:gap-12 min-w-max">
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Precision</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Craftsmanship</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Exclusivity</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">•</span>
+            <span className="font-label-caps text-xs md:text-xl font-medium text-primary/70 uppercase tracking-[0.2em] md:tracking-[0.5em]">Artistry</span>
+          </div>
         </div>
       </section>
 

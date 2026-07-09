@@ -47,3 +47,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     filter: invert(86%) sepia(33%) saturate(1478%) hue-rotate(338deg) brightness(98%) contrast(93%);
     cursor: pointer;
 }
+
+/* Utility to hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
