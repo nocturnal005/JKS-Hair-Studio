@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary;
+    color-scheme: dark;
+  }
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.gold-underline {
+    position: relative;
+}
+.gold-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: #f2ca50;
+}
+.menu-dot-line {
+    flex-grow: 1;
+    border-bottom: 1px dotted #4d4635;
+    margin: 0 12px;
+    transform: translateY(-6px);
+}
+.obsidian-card {
+    background-color: #121414;
+    border: 1px solid #333333;
+    transition: border-color 0.3s ease;
+}
+.obsidian-card:hover {
+    border-color: #f2ca50;
+}
+.gold-glint {
+    border-top: 1px solid rgba(242, 202, 80, 0.3);
+}
+
+/* Style the native date/time picker icons to be yellow gold */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(86%) sepia(33%) saturate(1478%) hue-rotate(338deg) brightness(98%) contrast(93%);
+    cursor: pointer;
+}
