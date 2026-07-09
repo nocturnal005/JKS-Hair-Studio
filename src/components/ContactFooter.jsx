@@ -32,7 +32,9 @@ const ContactFooter = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-20">
             <div className="space-y-6">
               <div className="flex justify-center md:justify-start">
-                <img src="/logo.png" alt="JKS Logo" className="w-24 h-24 object-contain rounded-full border border-primary/20" />
+                <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="inline-block group cursor-pointer">
+                  <img src="/logo.png" alt="JKS Logo" className="w-24 h-24 object-contain rounded-full border border-primary/20 group-hover:scale-105 transition-transform duration-300 shadow-xl" />
+                </a>
               </div>
               <p className="font-body-md text-body-md text-on-surface-variant max-w-xs">
                 The definitive destination for premium hair craftsmanship in London. Precision, prestige, and unparalleled service.
